@@ -9,6 +9,7 @@ html {
 }
 body {
   width: 100vw;
+  height: 100vh;
   color: hsl(0, 0%, 95%);
   padding: 7.2em 0;
   display: flex;
@@ -31,6 +32,7 @@ p {
 
 .card {
   width: 87%;
+  max-width: 326px;
   display: flex;
   flex-direction: column;
   border-radius: 0.8em;
@@ -38,7 +40,8 @@ p {
 }
 
 .card-section {
-  height: 65vh;
+  /* height: 65vh; */
+  height: 440px;
   padding: 1em 3em;
   display: flex;
   flex-direction: column;
@@ -83,4 +86,37 @@ button {
 }
 .card-section-luxury > button {
   color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (min-width: 1024px) {
+  p {
+    font-size: 0.8em;
+  }
+
+  body {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .card {
+    width: 75vw;
+    max-width: 850px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-section {
+    border-radius: 0;
+    padding: 1em 3.7em;
+  }
+
+  .card-section-sedan {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+  }
+  .card-section-luxury {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+  }
 }
