@@ -11,7 +11,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: hsl(0, 0%, 95%);
-  padding: 7.2em 0;
+  padding: 6.25em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,9 +40,8 @@ p {
 }
 
 .card-section {
-  /* height: 65vh; */
   height: 440px;
-  padding: 1em 3em;
+  padding: 2.2em 3em 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -90,7 +89,12 @@ button {
 
 @media only screen and (min-width: 1024px) {
   p {
-    font-size: 0.8em;
+    font-size: 0.85em;
+    padding-bottom: 4.5em;
+  }
+  h1 {
+    font-size: 2.3rem;
+    letter-spacing: 0.04rem;
   }
 
   body {
@@ -99,16 +103,17 @@ button {
   }
 
   .card {
-    width: 75vw;
-    max-width: 850px;
+    width: 80vw;
+    max-width: 808px;
+    height: 425px;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 
   .card-section {
+    height: 100%;
+    width: 33.3%;
     border-radius: 0;
-    padding: 1em 3.7em;
+    padding: 1em 3.4em 0.6em 2.55em;
   }
 
   .card-section-sedan {
@@ -118,5 +123,6 @@ button {
   .card-section-luxury {
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
+    padding-right: 3.3em;
   }
 }
